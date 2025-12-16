@@ -1,31 +1,35 @@
-##Investigação de Anomalias Cardíacas em Datasets de Eletrocardiogramas> **Projeto de Conclusão de Curso (TCC)** > **Curso:** Ciência da Computação - PUCPR
+# Investigação de Anomalias Cardíacas em Datasets de Eletrocardiogramas
+> **Projeto de Conclusão de Curso (TCC)** > **Curso:** Ciência da Computação - PUCPR
+> 
 > **Autores:** Henrique L. Richa, Renan B. Biavati, Vitória Izabel M. Pinto
 
 > <img width="544" height="460" alt="image" src="https://github.com/user-attachments/assets/688f2be7-31fd-4da9-923e-8a9585ad7505" />
 
-
-##📋 Sobre o Projeto Este projeto explora a aplicação de técnicas de **Aprendizado de Máquina (Machine Learning)** na análise de eletrocardiogramas (ECG), com o objetivo de automatizar e aprimorar a detecção de anomalias cardíacas.
+## 📋 Sobre o Projeto
+Este projeto explora a aplicação de técnicas de **Aprendizado de Máquina (Machine Learning)** na análise de eletrocardiogramas (ECG), com o objetivo de automatizar e aprimorar a detecção de anomalias cardíacas.
 
 Diante da complexidade dos dados de ECG, o estudo compara diversos algoritmos de aprendizado supervisionado para identificar padrões no **MIT-BIH Arrhythmia Database**, maximizando métricas críticas como acurácia e especificidade.
 
-##🎯 Objetivos* Comparar a eficácia de diferentes modelos de ML na classificação de batimentos cardíacos.
+## 🎯 Objetivos
+* Comparar a eficácia de diferentes modelos de ML na classificação de batimentos cardíacos.
 * Otimizar hiperparâmetros utilizando **GridSearch** para refinar os resultados.
 
 
 * Implementar técnicas avançadas de **Ensemble (Stacking)** para superar o desempenho de modelos isolados.
 
-##🗃️ Base de DadosO projeto utiliza o **MIT-BIH Arrhythmia Database** (https://www.kaggle.com/datasets/shayanfazeli/heartbeat), um padrão-ouro para pesquisas de arritmia.
+## 🗃️ Base de Dados
+O projeto utiliza o **MIT-BIH Arrhythmia Database**, um padrão-ouro para pesquisas de arritmia.
+(https://www.kaggle.com/datasets/shayanfazeli/heartbeat)
 
-* 
-**Classes Analisadas:** O dataset possui 5 classes principais de batimentos (Normal, Supraventricular, Ventricular, Fusão, Inclassificável).
-
-
-* 
-*Nota:* O *PTB Diagnostic ECG Database* foi analisado, mas excluído do escopo final devido à incompatibilidade de classes para junção direta.
+* **Classes Analisadas:** O dataset possui 5 classes principais de batimentos (Normal, Supraventricular, Ventricular, Fusão, Inclassificável).
 
 
+* *Nota:* O *PTB Diagnostic ECG Database* foi analisado, mas excluído do escopo final devido à incompatibilidade de classes para junção direta.
 
-##🚀 Tecnologias e BibliotecasO projeto foi desenvolvido em **Python** utilizando **Jupyter Notebooks**.
+
+
+## 🚀 Tecnologias e Bibliotecas
+O projeto foi desenvolvido em **Python** utilizando **Jupyter Notebooks**.
 
 * **Manipulação de Dados:** `pandas`, `numpy`
 * **Visualização:** `matplotlib`, `seaborn`
@@ -34,42 +38,29 @@ Diante da complexidade dos dados de ECG, o estudo compara diversos algoritmos de
 * **Ensemble:** `vecstack`
 * **Serialização:** `joblib`
 
-##🧠 Modelos ImplementadosForam desenvolvidos e avaliados 7 modelos individuais e 1 estratégia de Stacking:
+## 🧠 Modelos Implementados
+Foram desenvolvidos e avaliados 7 modelos individuais e 1 estratégia de Stacking:
 
-1. 
-**KNN (K-Nearest Neighbors)** 
+1. **KNN (K-Nearest Neighbors)** 
 
+2. **SVM (Support Vector Machine)** 
 
-2. 
-**SVM (Support Vector Machine)** 
+3. **Random Forest** 
 
+4. **MLP (Multilayer Perceptron)** 
 
-3. 
-**Random Forest** 
+5. **AdaBoost** 
 
+6. **Gradient Boosting** 
 
-4. 
-**MLP (Multilayer Perceptron)** 
+7. **XGBoost** 
 
-
-5. 
-**AdaBoost** 
-
-
-6. 
-**Gradient Boosting** 
-
-
-7. 
-**XGBoost** 
-
-
-8. 
-**Stacking (Ensemble)**: Combinação das previsões dos modelos acima.
+8. **Stacking (Ensemble)**: Combinação das previsões dos modelos acima.
 
 
 
-##📂 Estrutura do RepositórioOs arquivos estão organizados conforme a etapa de experimentação:
+## 📂 Estrutura do Repositório
+Os arquivos estão organizados conforme a etapa de experimentação:
 
 | Arquivo | Descrição |
 | --- | --- |
@@ -83,7 +74,8 @@ Diante da complexidade dos dados de ECG, o estudo compara diversos algoritmos de
 | `experimentacao_stacking4.ipynb` | **Modelo Final:** Estratégia de Stacking (Meta-modelo XGBoost) utilizando os melhores classificadores base. |
 | `Artigo Científico.pdf` | Documentação teórica completa e análise detalhada dos resultados. |
 
-##📊 Resultados ChaveOs modelos passaram por rigorosa otimização de hiperparâmetros. Abaixo, os destaques dos resultados otimizados (Média Ponderada):
+## 📊 Resultados Chave
+Os modelos passaram por rigorosa otimização de hiperparâmetros. Abaixo, os destaques dos resultados otimizados (Média Ponderada):
 
 | Modelo | Acurácia | F1-Score | Especificidade |
 | --- | --- | --- | --- |
@@ -100,12 +92,12 @@ Diante da complexidade dos dados de ECG, o estudo compara diversos algoritmos de
 > 
 > 
 
-##⚙️ Como Executar1. **Instale as dependências:**
+## ⚙️ Como Executar
+1. **Instale as dependências:**
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost vecstack tabulate joblib
 
 ```
-
 
 2. **Dataset:** Certifique-se de que os arquivos `mitbih_train.csv` e `mitbih_test.csv` estejam no mesmo diretório dos notebooks.
 3. **Execução:**
@@ -116,11 +108,9 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost vecstack tabula
 
 ---
 
-###📝 Citação
+### 📝 Citação
 Se utilizar este trabalho ou parte dele, favor citar:
 
 > Richa, H. L.; Biavati, R. B.; Pinto, V. I. M. (2024). *Investigação de Anomalias Cardíacas em Datasets de Eletrocardiogramas*. Pontifícia Universidade Católica do Paraná (PUCPR). 
-> 
-> 
 
 ---
