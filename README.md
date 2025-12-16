@@ -1,5 +1,6 @@
-#Investigação de Anomalias Cardíacas em Datasets de Eletrocardiogramas> **Projeto de Conclusão de Curso (TCC)** > **Curso:** Ciência da Computação - PUCPR
+##Investigação de Anomalias Cardíacas em Datasets de Eletrocardiogramas> **Projeto de Conclusão de Curso (TCC)** > **Curso:** Ciência da Computação - PUCPR
 > **Autores:** Henrique L. Richa, Renan B. Biavati, Vitória Izabel M. Pinto
+
 > <img width="544" height="460" alt="image" src="https://github.com/user-attachments/assets/688f2be7-31fd-4da9-923e-8a9585ad7505" />
 
 
